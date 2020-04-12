@@ -8,8 +8,8 @@ X = 0
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    picture = open('/pythonprogect/hello.png', 'rb')
-    bot.send_photo(message.chat.id, picture)
+    #picture = open('/pythonprogect/hello.png', 'rb')
+    #bot.send_photo(message.chat.id, picture)
 
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
