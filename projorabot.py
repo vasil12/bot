@@ -43,7 +43,6 @@ def echo_all(message):
             X = X2 - X1
             bot.send_message(message.chat.id, str(X1) + ' + X = ' + str(X2) + '\n input X')
         elif message.text != str(X):
-            bot.send_message(message.chat.id, 'write number')
             markup2 = types.InlineKeyboardMarkup(row_width=2)
             item1 = types.InlineKeyboardButton("help", callback_data='hel')
             item2 = types.InlineKeyboardButton("I can decide", callback_data='can')
